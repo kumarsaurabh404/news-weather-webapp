@@ -20,6 +20,8 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import GoogleButton from 'react-google-button'
 import '../Signin.css';
+import { getAuth, createUserWithEmailAndPassword } from "firebase/compat/auth";
+
 
 const Signup = () => {
 
@@ -81,13 +83,13 @@ const Signup = () => {
 
                     <Box
                         sx={{
-                            paddingTop: 8,
+                            paddingTop: 40,
                             display: 'flex',
                             flexDirection: 'column',
                             alignItems: 'center',
                         }}
                     >
-                        <Card style={{ padding: '32px', borderRadius: '8px' }} className="text-center" bg='light' border="primary">
+                        {/* <Card style={{ padding: '32px', borderRadius: '8px' }} className="text-center" bg='light' border="primary">
                             <center>
                                 <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
                                     <LockOutlinedIcon />
@@ -122,6 +124,7 @@ const Signup = () => {
                                 />
                                 <br />
                                 <Button
+                                onClick={handleSignup}
                                     type="submit"
                                     fullWidth
                                     variant="contained"
@@ -130,15 +133,19 @@ const Signup = () => {
                                     Sign Up
                                 </Button>
                                 <br />
-                                <Link href="/signin" variant="body2">
+                                <Link href="/" variant="body2">
                                     {"Already have an account? Sign in"}
                                 </Link>
 
                             </Box>
 
-                        </Card>
+                        </Card> */}
                         <br />
-                        <GoogleButton className='mx-auto' label='Sign up with Google' onClick={signInWithGoogle} />
+                        <GoogleButton className='mx-auto' id="google-button" label='Sign up with Google' onClick={signInWithGoogle} />
+                        <br />
+                                <Link href="/" style={{color:'black'}} variant="body2">
+                                    {"Already have an account? Sign in"}
+                                </Link>
 
                     </Box>
                 </Container>

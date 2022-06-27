@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useState, useRef } from 'react'
 import {
     Container,
     Button,
@@ -10,7 +10,7 @@ import { UserContext } from '../context/UserContext';
 import { Redirect } from 'react-router-dom';
 import { toast } from "react-toastify";
 import Link from '@mui/material/Link';
-
+import auth from '../config/firebaseConfig'
 import Avatar from '@mui/material/Avatar';
 import TextField from '@mui/material/TextField';
 import FormControlLabel from '@mui/material/FormControlLabel';
@@ -27,6 +27,31 @@ const Signin = () => {
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+
+    const emailRef = useRef(null);
+    const passwordRef = useRef(null);
+    const signUp = e => {
+        e.preventDefault();
+        auth.createUserWithEmailAndPassword(
+            emailRef.current.value,
+            passwordRef.current.value
+        ).then(user => {
+            console.log(user)
+        }).catch(err => {
+            console.log(err)
+        })
+    }
+    const signIn = e => {
+        e.preventDefault();
+        auth.signInWithEmailAndPassword(
+            emailRef.current.value,
+            passwordRef.current.value
+        ).then(user => {
+            console.log(user)
+        }).catch(err => {
+            console.log(err)
+        })
+    }
 
     const handleSignup = () => {
         firebase
@@ -71,7 +96,7 @@ const Signin = () => {
     }
 
     if (context.user?.uid) {
-        return <Redirect to="/home" />
+        return <Redirect to="/main" />
     }
 
     return (
@@ -81,13 +106,14 @@ const Signin = () => {
 
                     <Box
                         sx={{
-                            paddingTop: 8,
+                            paddingTop: 40,
                             display: 'flex',
                             flexDirection: 'column',
                             alignItems: 'center',
+                    
                         }}
                     >
-                        <Card style={{ padding: '32px', borderRadius: '8px' }} className="text-center" bg='light' border="primary">
+                        {/* <Card style={{ padding: '32px', borderRadius: '8px' }} className="text-center" bg='light' border="primary">
                             <center>
                                 <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
                                     <LockOutlinedIcon />
@@ -99,6 +125,7 @@ const Signin = () => {
 
                             <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
                                 <TextField
+                                    ref={emailRef}
                                     margin="normal"
                                     required
                                     fullWidth
@@ -111,6 +138,7 @@ const Signin = () => {
 
                                 />
                                 <TextField
+                                    ref={passwordRef}
                                     margin="normal"
                                     required
                                     fullWidth
@@ -122,6 +150,7 @@ const Signin = () => {
                                 />
                                 <br />
                                 <Button
+                                    onClick={signIn}
                                     type="submit"
                                     fullWidth
                                     variant="contained"
@@ -134,10 +163,14 @@ const Signin = () => {
                                     {"Don't have an account? Sign Up"}
                                 </Link>
                             </Box>
-                        </Card>
+                        </Card> */}
 
                         <br />
-                        <GoogleButton className='mx-auto' label='Sign in with Google' onClick={signInWithGoogle} />
+                        <GoogleButton className='mx-auto' id="google-button" label='Sign in with Google' onClick={signInWithGoogle} />
+                        <br />
+                                <Link href="/signup" style={{color: "black"}} variant="body2">
+                                    {"Don't have an account? Sign Up"}
+                                </Link>
                     </Box>
                 </Container>
             </div>

@@ -17,9 +17,9 @@ import {
 const PageNotFound = () => {
     return (
         <div className='notFoundDiv'>
-            <header >ERROR 404: PAGE NOT FOUND 🥲🔫</header>
+            <header >ERROR 404: PAGE NOT FOUND</header>
             <br />
-            <Link class="notFound" href="/" variant="body2"></Link>
+            <Link class="notFound" href="./main" variant="body2"></Link>
         </div>
     )
 }
