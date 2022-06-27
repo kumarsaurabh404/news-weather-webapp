@@ -1,6 +1,7 @@
 import React from 'react'
 import '../PageNotFound.css'
 import Link from '@mui/material/Link';
+// import '../App.css';
 import {
     Collapse,
     Navbar,

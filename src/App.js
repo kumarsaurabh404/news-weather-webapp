@@ -6,6 +6,9 @@ import Home from "./pages/Home";
 import Signin from "./pages/Signin";
 import Signup from "./pages/Signup";
 import PageNotFound from "./pages/PageNotFound";
+import MainPage from "./pages/MainPage";
+import Weather from "./pages/Weather";
+// import Live from "./pages/Live/Live";
 import './App.css'
 import { BrowserRouter, Switch, Route, Link } from "react-router-dom"
 import { UserContext } from "./context/UserContext";
@@ -26,8 +29,11 @@ const App = () => {
         <BrowserRouter>
             <UserContext.Provider value={{ user, setUser }}>
                 <Switch>
-                    <Route exact path="/" component={Home} />
+                <Route exact path="/" component={MainPage} />
+                    <Route exact path="/Home" component={Home} />
                     <Route path="/signin" component={Signin} />
+                    <Route path="/Weather" component={Weather} />
+                    {/* <Route path="/Live" component={Live} /> */}
                     <Route path="/signup" component={Signup} />
                     <Route path="/Apple"><News newsName="iphone" /></Route>
                     <Route path="/Tesla"><News newsName="tesla" /></Route>
@@ -35,6 +41,7 @@ const App = () => {
                     <Route path="/nasa"><News newsName="nasa" /></Route>
                     <Route path="/upsc"><News newsName="upsc" /></Route>
                     <Route path="/technology"><News newsName="technology" /></Route>
+                    
                     <Route path="*" component={PageNotFound} />
                 </Switch>
             </UserContext.Provider>

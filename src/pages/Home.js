@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div className="parent">
       <div className="logout-div">
-        <a href="./" id="logo">
+        <a href="./Home" id="logo">
           {" "}
           Home
         </a>
