@@ -26,8 +26,8 @@ const App = () => {
         <BrowserRouter>
             <UserContext.Provider value={{ user, setUser }}>
                 <Switch>
-                    <Route exact path="/" component={Home} />
-                    <Route path="/signin" component={Signin} />
+                    <Route exact path="/" component={Signin} />
+                    <Route path="/home" component={Home} />
                     <Route path="/signup" component={Signup} />
                     <Route path="/Apple"><News newsName="iphone" /></Route>
                     <Route path="/Tesla"><News newsName="tesla" /></Route>
