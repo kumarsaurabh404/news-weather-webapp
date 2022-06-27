@@ -71,7 +71,7 @@ const Signup = () => {
     }
 
     if (context.user?.uid) {
-        return <Redirect to="/home" />
+        return <Redirect to="/main" />
     }
 
     return (
