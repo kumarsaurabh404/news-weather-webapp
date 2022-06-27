@@ -70,9 +70,9 @@ const Signup = () => {
             })
     }
 
-    // if (context.user?.uid) {
-    //     return <Redirect to="/" />
-    // }
+    if (context.user?.uid) {
+        return <Redirect to="/home" />
+    }
 
     return (
         <div className='signin min-vh-100 position-relative'>

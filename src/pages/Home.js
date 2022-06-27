@@ -11,7 +11,7 @@ const Home = () => {
           Home
         </a>
         <button className="logout" class="btn btn-outline-secondary">
-          <a href="./signin"> Logout</a>
+          <a href="./"> Logout</a>
         </button>
       </div>
       <div className="App">
