@@ -6,12 +6,13 @@ const MainPage = () => {
   return (
     <div className="parent">
       <div className="logout-div">
-        <a href="./" id="logo">
+        <a href="#" id="logo">
           {" "}
           Utility App
         </a>
+        
         <button className="logout" class="btn btn-outline-secondary">
-          <a href="./"> Logout</a>
+          <a href="/"> Logout</a>
         </button>
       </div>
       <div className="App">

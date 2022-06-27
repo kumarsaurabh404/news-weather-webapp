@@ -4,25 +4,44 @@
   align-items: center;
   min-height: 100vh;
   min-width: 100%;
-  background-color: #222;
+  /* background-color: #222; */
   flex-direction: column;
+  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  font-family: 'Anek Malayalam', sans-serif;
 }
 
 .App{
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  height: 100vh;
   min-width: 100%;
-  background-color: #222;
-}
+  /* background-color: #222; */
+  background: url('./pages/assets/jpg2.jpg');
+  background-size: cover;
+  opacity: 0.8;
+  background-repeat: no-repeat;
+  /* margin-top:100px; */
+  /*  */
+  /* background-attachment: fixed; */
+  /* background-position-y: center; */
+  }
 
 .logout-div{
   min-width: 100vw;
   display: flex;
   justify-content: space-between;
+  /* position: fixed; */
+  top: 0;
+    background-color: #222;
+  opacity:0.9;
+  /* width: 100%; */
+  /* overflow: hidden; */
+  
 }
-.logout-div button,a {
+ button,a {
   margin: 15px;
 }
 
@@ -48,6 +67,8 @@
 
 .App button{
   margin: 15px;
+  margin-top: -130px;
+  font-weight: bold;
 }
 
 .App a{
