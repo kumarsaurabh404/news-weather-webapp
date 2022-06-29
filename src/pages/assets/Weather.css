@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Anek Malayalam', sans-serif;
+
   }
   
   body {
@@ -16,7 +18,7 @@
   }
   
   .app.warm {
-    background-image: url('./warm-bg.jpg');
+    background-image: url('./back1.jfif');
   }
   
   main {

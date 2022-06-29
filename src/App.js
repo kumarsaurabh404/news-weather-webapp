@@ -9,6 +9,7 @@ import PageNotFound from "./pages/PageNotFound";
 import MainPage from "./pages/MainPage";
 import Weather from "./pages/Weather";
 // import Live from "./pages/Live/Live";
+import Corona from "./pages/Corona/Corona";
 import './App.css'
 import { BrowserRouter, Switch, Route, Link } from "react-router-dom"
 import { UserContext } from "./context/UserContext";
@@ -35,12 +36,20 @@ const App = () => {
                     <Route exact path="/" component={Signin} />
                     <Route path="/home" component={Home} />
                     <Route path="/signup" component={Signup} />
+                    {/* <Route path="/Live" component={Live} /> */}
+                    <Route path="/Corona" component={Corona} />
                     <Route path="/Apple"><News newsName="iphone" /></Route>
                     <Route path="/Tesla"><News newsName="tesla" /></Route>
                     <Route path="/Bitcoin"><News newsName="bitcoin" /></Route>
                     <Route path="/nasa"><News newsName="nasa" /></Route>
                     <Route path="/upsc"><News newsName="upsc" /></Route>
                     <Route path="/technology"><News newsName="technology" /></Route>
+                    <Route path="/hollywood"><News newsName="hollywood" /></Route>
+                    <Route path="/ott"><News newsName="ott" /></Route>
+                    <Route path="/android"><News newsName="android" /></Route>
+                    <Route path="/movies"><News newsName="movies" /></Route>
+                    <Route path="/cars"><News newsName="cars" /></Route>
+                    <Route path="/bikes"><News newsName="bike" /></Route>
                     
                     <Route path="*" component={PageNotFound} />
                 </Switch>

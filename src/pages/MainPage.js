@@ -28,8 +28,9 @@ const MainPage = () => {
         <button type="button" class="btn btn-outline-primary">
           <a href="./Jobs">Jobs</a>
         </button>
+        
         <button type="button" class="btn btn-outline-primary">
-          <a href="./Live">Live Score</a>
+          <a href="./Corona">Live Score</a>
         </button>
       
       </div>
