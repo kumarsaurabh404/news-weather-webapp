@@ -30,7 +30,7 @@ const MainPage = () => {
         </button>
         
         <button type="button" class="btn btn-outline-primary">
-          <a href="./Corona">Live Score</a>
+          <a href="./Youtube">Youtube</a>
         </button>
       
       </div>

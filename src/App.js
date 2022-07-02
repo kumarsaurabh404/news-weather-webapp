@@ -9,7 +9,9 @@ import PageNotFound from "./pages/PageNotFound";
 import MainPage from "./pages/MainPage";
 import Weather from "./pages/Weather";
 // import Live from "./pages/Live/Live";
-import Corona from "./pages/Corona/Corona";
+// import Corona from "./pages/Corona/Corona";
+import Youtube from "./pages/Youtube/components/Youtube";
+import Jobs from "./pages/Jobs/Jobs.js"
 import './App.css'
 import { BrowserRouter, Switch, Route, Link } from "react-router-dom"
 import { UserContext } from "./context/UserContext";
@@ -36,8 +38,9 @@ const App = () => {
                     <Route exact path="/" component={Signin} />
                     <Route path="/home" component={Home} />
                     <Route path="/signup" component={Signup} />
+                    <Route path="/Jobs" component={Jobs} />
                     {/* <Route path="/Live" component={Live} /> */}
-                    <Route path="/Corona" component={Corona} />
+                    <Route path="/Youtube" component={Youtube} />
                     <Route path="/Apple"><News newsName="iphone" /></Route>
                     <Route path="/Tesla"><News newsName="tesla" /></Route>
                     <Route path="/Bitcoin"><News newsName="bitcoin" /></Route>

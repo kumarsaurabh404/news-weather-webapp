@@ -36,6 +36,7 @@ const Home = () => {
         <button type="button" class="btn btn-outline-primary">
           <a href="./hollywood">HOLLYWOOD</a>
         </button>
+        
         <button type="button" class="btn btn-outline-success">
           <a href="./ott">OTT</a>
         </button>
@@ -56,6 +57,13 @@ const Home = () => {
         <button type="button" class="btn btn-outline-primary">
           <a href="./bikes">BIKES</a>
           
+        </button>
+        <button type="button" class="btn btn-outline-primary">
+          <a href="./bikes">BIKES</a>
+          
+        </button>
+        <button type="button" class="btn btn-outline-primary">
+          <a href="./bikes">BIKES</a>
         </button>
       </div>
     </div>

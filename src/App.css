@@ -4,29 +4,34 @@
   align-items: center;
   min-height: 100vh;
   min-width: 100%;
+  /* flex-wrap: wrap; */
   /* background-color: #222; */
   flex-direction: column;
   overflow: hidden;
   overflow-y: hidden;
-  overflow-x: hidden;
+  
   font-family: 'Anek Malayalam', sans-serif;
+  background: url('./pages/assets/main.jpg');
+  background-size: cover;
+   background-attachment: fixed;
+  /* background-position-y: center; */
 }
 
 .App{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   height: 100vh;
   min-width: 100%;
   /* background-color: #222; */
-  background: url('./pages/assets/jpg2.jpg');
-  background-size: cover;
+  /* background: url('./pages/assets/jpg2.jpg'); */
+  /* background-size: cover; */
   opacity: 0.8;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   /* margin-top:100px; */
   /*  */
-  /* background-attachment: fixed; */
-  /* background-position-y: center; */
+ 
   }
 
 .logout-div{
@@ -35,7 +40,7 @@
   justify-content: space-between;
   /* position: fixed; */
   top: 0;
-    background-color: #222;
+  background-color: #222;
   opacity:0.9;
   /* width: 100%; */
   /* overflow: hidden; */
@@ -80,3 +85,12 @@
   color: white;
 }
 
+/* ***************************************/
+
+.search_bar_box{
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
