@@ -22,15 +22,13 @@ const MainPage = () => {
         <button type="button" class="btn btn-outline-primary">
           <a href="./Weather">Weather</a>
         </button>
+       
         <button type="button" class="btn btn-outline-primary">
-          <a href="./College">College</a>
-        </button>
-        <button type="button" class="btn btn-outline-primary">
-          <a href="./Jobs">Jobs</a>
+          <a href="./Jobs">Jobs Portal</a>
         </button>
         
         <button type="button" class="btn btn-outline-primary">
-          <a href="./Youtube">Youtube</a>
+          <a href="./Youtube">Watch</a>
         </button>
       
       </div>
