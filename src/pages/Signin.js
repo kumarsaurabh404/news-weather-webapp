@@ -110,7 +110,7 @@ const Signin = () => {
                             display: 'flex',
                             flexDirection: 'column',
                             alignItems: 'center',
-                    
+
                         }}
                     >
                         {/* <Card style={{ padding: '32px', borderRadius: '8px' }} className="text-center" bg='light' border="primary">
@@ -168,9 +168,9 @@ const Signin = () => {
                         <br />
                         <GoogleButton className='mx-auto' id="google-button" label='Sign in with Google' onClick={signInWithGoogle} />
                         <br />
-                                <Link href="/signup" style={{color: "black"}} variant="body2">
-                                    {"Don't have an account? Sign Up"}
-                                </Link>
+                        <Link href="/signup" style={{ color: "white", textDecoration: "none", border: "1px solid white", padding: "5px" }} variant="body2">
+                            {"Don't have an account? Sign Up"}
+                        </Link>
                     </Box>
                 </Container>
             </div>

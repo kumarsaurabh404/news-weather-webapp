@@ -32,14 +32,12 @@ const App = () => {
         <BrowserRouter>
             <UserContext.Provider value={{ user, setUser }}>
                 <Switch>
-                <Route exact path="/main" component={MainPage} />
+                    <Route exact path="/main" component={MainPage} />
                     <Route path="/Weather" component={Weather} />
-                    {/* <Route path="/Live" component={Live} /> */}
                     <Route exact path="/" component={Signin} />
                     <Route path="/home" component={Home} />
                     <Route path="/signup" component={Signup} />
                     <Route path="/Jobs" component={Jobs} />
-                    {/* <Route path="/Live" component={Live} /> */}
                     <Route path="/Youtube" component={Youtube} />
                     <Route path="/Apple"><News newsName="iphone" /></Route>
                     <Route path="/Tesla"><News newsName="tesla" /></Route>
@@ -53,7 +51,6 @@ const App = () => {
                     <Route path="/movies"><News newsName="movies" /></Route>
                     <Route path="/cars"><News newsName="cars" /></Route>
                     <Route path="/bikes"><News newsName="bike" /></Route>
-                    
                     <Route path="*" component={PageNotFound} />
                 </Switch>
             </UserContext.Provider>

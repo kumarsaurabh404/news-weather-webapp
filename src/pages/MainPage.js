@@ -10,27 +10,27 @@ const MainPage = () => {
           {" "}
           Utility App
         </a>
-        
-        <button className="logout" class="btn btn-outline-secondary">
+
+        <button className="logout" class="btn btn-secondary">
           <a href="/"> Logout</a>
         </button>
       </div>
       <div className="App">
-        <button type="button" class="btn btn-outline-primary">
+        <button type="button" class="btn btn-primary">
           <a href="./Home">News</a>
         </button>
-        <button type="button" class="btn btn-outline-primary">
+        <button type="button" class="btn btn-primary">
           <a href="./Weather">Weather</a>
         </button>
-       
-        <button type="button" class="btn btn-outline-primary">
+
+        <button type="button" class="btn btn-primary">
           <a href="./Jobs">Jobs Portal</a>
         </button>
-        
-        <button type="button" class="btn btn-outline-primary">
+
+        <button type="button" class="btn btn-primary">
           <a href="./Youtube">Watch</a>
         </button>
-      
+
       </div>
     </div>
   );

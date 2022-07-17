@@ -10,42 +10,46 @@ const Home = () => {
           {" "}
           Home
         </a>
-        <button className="logout" class="btn btn-outline-secondary">
+        <a href="./main" id="logo">
+          {" "}
+          Utility App
+        </a>
+        <button className="logout" class="btn btn-secondary">
           <a href="./"> Logout</a>
         </button>
       </div>
       <div className="App">
-        <button type="button" class="btn btn-outline-primary">
+        <button type="button" class="btn btn-primary">
           <a href="./Apple">APPLE</a>
         </button>
-        <button type="button" class="btn btn-outline-success">
+        <button type="button" class="btn btn-success">
           <a href="./Tesla">TESLA</a>
         </button>
-        <button type="button" class="btn btn-outline-warning">
+        <button type="button" class="btn btn-warning">
           <a href="./Bitcoin">BITCOIN</a>
         </button>
-       
-        <button type="button" class="btn btn-outline-primary">
+
+        <button type="button" class="btn btn-primary">
           <a href="./technology">TECHNOLOGY</a>
         </button>
-        <button type="button" class="btn btn-outline-primary">
+        <button type="button" class="btn btn-primary">
           <a href="./hollywood">HOLLYWOOD</a>
         </button>
-        
-        
-        <button type="button" class="btn btn-outline-info">
+
+
+        <button type="button" class="btn btn-info">
           <a href="./android">ANDROID</a>
         </button>
-        <button type="button" class="btn btn-outline-warning">
+        <button type="button" class="btn btn-warning">
           <a href="./automobile">AUTOMOBILE</a>
         </button>
-        <button type="button" class="btn btn-outline-primary">
+        <button type="button" class="btn btn-primary">
           <a href="./movies">MOVIES</a>
-          
+
         </button>
-        
-          
-      
+
+
+
       </div>
     </div>
   );

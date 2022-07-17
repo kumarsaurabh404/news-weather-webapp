@@ -143,9 +143,9 @@ const Signup = () => {
                         <br />
                         <GoogleButton className='mx-auto' id="google-button" label='Sign up with Google' onClick={signInWithGoogle} />
                         <br />
-                                <Link href="/" style={{color:'black'}} variant="body2">
-                                    {"Already have an account? Sign in"}
-                                </Link>
+                        <Link href="/" style={{ color: 'white', textDecoration: "none", border: "1px solid white", padding: "5px" }} variant="body2">
+                            {"Already have an account? Sign in"}
+                        </Link>
 
                     </Box>
                 </Container>
